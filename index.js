@@ -19,7 +19,7 @@ async function main() {
             topComment = await yt.getTopComment(process.env["YT_VIDEO_ID"]);
             console.log(topComment)
 
-            title = topComment.textDisplay.slice(0,70)
+            title = topComment.textDisplay.slice(0,70).replace(/[^a-zA-Z ]/g, "")
             description = `[Current Title By]\n${topComment.authorDisplayName}\n${topComment.authorChannelUrl}\n\n` +
             `[Full Message]\n`+
             `${topComment.textDisplay}\n\n`+
