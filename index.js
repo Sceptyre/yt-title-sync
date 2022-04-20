@@ -22,7 +22,7 @@ async function main() {
             title = topComment.textDisplay.slice(0,70).replace(/[^a-zA-Z ]/g, "")
             description = `[Current Title By]\n${topComment.authorDisplayName}\n${topComment.authorChannelUrl}\n\n` +
             `[Full Message]\n`+
-            `${topComment.textDisplay}\n\n`+
+            `${topComment.textOriginal}\n\n`+
             `Make your comment the most relevant to make it the title and get tagged in the description\n` +
             `Note: Youtube titles are limited to 70 characters\n\n` +
             `The Youtube comment system depends on four things:\n` + 
